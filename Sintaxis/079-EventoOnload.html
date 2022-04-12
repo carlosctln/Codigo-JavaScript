@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo de DOM con JavaScript</title>
+</head>
+<body onload="entrar()">
+    <h1 id="titulo">Manejo de DOM con JavaScript</h1>
+    <br>
+    <div id="mostrar"></div>
+    <script>
+        function entrar() {
+            alert('Entrando a la página web');
+            let texto = '';
+            if(navigator.cookieEnabled){
+                texto = 'Las cookies están habilitaddas';
+            }else{
+                texto = 'Las cookies no están habilitaddas';
+            }
+            document.getElementById('mostrar').innerHTML = texto;
+        }
+    </script>
+</body>
+</html>
